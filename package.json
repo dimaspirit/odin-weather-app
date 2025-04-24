@@ -1,0 +1,19 @@
+{
+  "name": "odin-weather-app",
+  "version": "1.0.0",
+  "description": "https://www.theodinproject.com/lessons/node-path-javascript-weather-app",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaspirit/odin-weather-app.git"
+  },
+  "author": "Dmytro Lobanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaspirit/odin-weather-app/issues"
+  },
+  "homepage": "https://github.com/dimaspirit/odin-weather-app#readme"
+}
