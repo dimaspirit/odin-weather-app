@@ -1,3 +1,4 @@
+import './style.css';
 import { getWeatherByCity } from "./weatherAPI.js";
 
 let prevCity;

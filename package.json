@@ -4,6 +4,8 @@
   "description": "https://www.theodinproject.com/lessons/node-path-javascript-weather-app",
   "private": true,
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/dimaspirit/odin-weather-app/issues"
   },
-  "homepage": "https://github.com/dimaspirit/odin-weather-app#readme"
+  "homepage": "https://github.com/dimaspirit/odin-weather-app#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
 }
