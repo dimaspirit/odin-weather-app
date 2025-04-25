@@ -5,6 +5,16 @@ function getURL(city) {
 export function getWeatherByCity(city) {
   return fetch(getURL(city))
     .then(response => response.json())
+    .then(data => {
+      const {currentConditions} = data;
+
+      return {
+        address: data.resolvedAddress,
+        conditions: currentConditions.conditions,
+        feelslike: currentConditions.feelslike,
+        icon: currentConditions.icon,
+      };
+    })
     .catch(error => {
       return error;
       // TODO: Handle 'Bad API Request:Invalid location parameter value.' error
