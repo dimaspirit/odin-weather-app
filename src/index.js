@@ -1,7 +1,10 @@
 import './style.css';
 import { getWeatherByCity } from "./weatherAPI.js";
+import UI from './weatherUI.js';
 
 let prevCity;
+
+const weatherUI = new UI('#search', '#dashboard');
 
 const formEl = document.querySelector('#search');
 
@@ -19,6 +22,14 @@ formEl.addEventListener('submit', (event) => {
   getWeatherByCity(city)
     .then(data => {
       console.log('DATA', data);
+      const {currentConditions} = data;
+
+      weatherUI.renderWeather({
+        address: data.resolvedAddress,
+        conditions: currentConditions.conditions,
+        feelslike: currentConditions.feelslike,
+        icon: currentConditions.icon,
+      });
     }).catch(error => {
       console.log('Error', error);
     }).finally(() => {
