@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+<script defer src="main.bundle.js"></script></head>
+<body>
+  <div class="container">
+    <h1>What's the weather outside now?</h1>
+
+    <div class="app">
+      <form id="search" class="search">
+        <label for="search-city" class="search-label">Enter a city</label>
+        <input type="text" name="search-city" id="search-city" class="search-input" minlength="3" maxlength="48" required>
+        <button type="submit" id="search-submit" class="search-submit">Search</button>
+      </form>
+  
+      <div id="dashboard" class="dashboard">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
