@@ -15,13 +15,16 @@ export default class UI {
 
     const locationEl = document.createElement('p');
     locationEl.textContent = address;
+    locationEl.classList.add('location');
     const conditionsEl = document.createElement('p');
     conditionsEl.textContent = conditions;
+    conditionsEl.classList.add('dashboard-conditions');
     const feelslikeEl = document.createElement('p');
     feelslikeEl.textContent = feelslike;
+    feelslikeEl.classList.add('dashboard-feelslike');
 
-    this.dashboardEl.appendChild(locationEl);
-    this.dashboardEl.appendChild(conditionsEl);
     this.dashboardEl.appendChild(feelslikeEl);
+    this.dashboardEl.appendChild(conditionsEl);
+    this.dashboardEl.appendChild(locationEl);
   }
 }
